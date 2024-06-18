@@ -16,10 +16,10 @@ const Layout = () => {
 
         <BrowserRouter >
         <Routes>
-          <Route path='shop' element={<Shop />}/>
-          <Route path='men' element={<Men />}/>
-          <Route path='women' element={<Women />}/>
-          <Route path='kids' element={<Kids />}/>
+          <Route path='/' element={<Shop />}/>
+          <Route path='/men' element={<Men />}/>
+          <Route path='/women' element={<Women />}/>
+          <Route path='/kids' element={<Kids />}/>
 
         </Routes>
         </BrowserRouter>
