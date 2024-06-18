@@ -18,9 +18,8 @@ export const ItemCardStyled = styled.div`
   }
 
   .Item-name {
-
-    font-size: 18px;
-    font-weigth: 500;
+    font-size: 15px;
+    font-weight: 500;
   }
   .itemCard:hover {
     transform: scale(1.05);

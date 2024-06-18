@@ -20,14 +20,14 @@ export const LayoutStyled = styled.div`
   }
   @media (max-width: ${({ theme }) => theme.desktop}) {
     .fs-24 {
-        font-size: 20px !important;
+        font-size: 15px !important;
     }
   }
 
 
   @media (max-width: ${({ theme }) => theme.minDesktop}) {
     .fs-24 {
-        font-size: 15px !important;
+        font-size: 10px !important;
     }
   }
 

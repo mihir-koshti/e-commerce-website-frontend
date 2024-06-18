@@ -10,6 +10,7 @@ const Footer = () => {
     <FooterStyled>
       <Container>
         <div className="footer">
+        <hr className="footer-hr"/>
           <div className="footer-logo">
             <img src={footer_logo} alt="" />
             <p className="Brand-Name">SHOPPER</p>

@@ -13,6 +13,10 @@ export const NavbarStyled = styled.div`
     font-size: 30px;
   }
 
+  .selectedTab {
+    color: ${({theme}) => theme.colors.primary2};
+    font-size: 20px !important;
+  }
   .loginBtn {
     background: ${({ theme }) => theme.colors.primary};
     color: ${({ theme }) => theme.colors.btnTextColor};

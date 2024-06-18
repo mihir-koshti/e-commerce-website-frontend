@@ -26,4 +26,11 @@ export const FooterStyled = styled.div`
     height: 3px;
     background: #c7c7c7;
   }
+    
+  .footer-hr {
+    border: none;
+    border-radius: 10px;
+    height: 3px;
+    background: #c7c7c7;
+  }
 `;
