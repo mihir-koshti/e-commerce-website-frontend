@@ -6,6 +6,7 @@ import Shop from '../../pages/shops'
 import Men from '../../pages/men'
 import Women from '../../pages/women'
 import Kids from '../../pages/kids'
+import Footer from '../Footer'
 
 const Layout = () => {
   return (
@@ -22,6 +23,7 @@ const Layout = () => {
 
         </Routes>
         </BrowserRouter>
+        <Footer />
     </div>
     </LayoutStyled>
   )
