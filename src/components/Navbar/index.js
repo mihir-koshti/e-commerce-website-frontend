@@ -7,14 +7,14 @@ import Navbar from "react-bootstrap/Navbar";
 import Button from "react-bootstrap/Button";
 
 import { Container, Nav, NavbarBrand } from "react-bootstrap";
-import { useLocation } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 const NavbarCom = () => {
   const [selectNav, setSelectedNav] = useState("/");
   const location = useLocation();
 
   useEffect(() => {
     setSelectedNav(location.pathname);
-  },[location]);
+  }, [location]);
 
   return (
     <NavbarStyled>
@@ -33,37 +33,42 @@ const NavbarCom = () => {
             >
               {/* <NavLink to={'/'}> Shop</NavLink> */}
               <Nav.Link
-              // as={Link}
+                as={NavLink}
+                to={"/"}
                 className={`fs-24 mx-4 ${
                   selectNav === "/" ? "selectedTab" : ""
                 }`}
-                href="/"
-                eventKey={'/'}
+                eventKey={"/"}
               >
                 Shop
               </Nav.Link>
               <Nav.Link
+                as={NavLink}
+                to={"/men"}
                 className={`fs-24 mx-4 ${
                   selectNav === "/men" ? "selectedTab" : ""
                 }`}
-                href="/men"
-                eventKey={'/men'}
+                eventKey={"/men"}
               >
                 Men
               </Nav.Link>
               <Nav.Link
+                as={NavLink}
+                to={"/women"}
                 className={`fs-24 mx-4 ${
                   selectNav === "/women" ? "selectedTab" : ""
                 }`}
-                href="/women"
+                eventKey={"/women"}
               >
                 Women
               </Nav.Link>
               <Nav.Link
+                as={NavLink}
+                to={"/kids"}
                 className={`fs-24 mx-4 ${
                   selectNav === "/kids" ? "selectedTab" : ""
                 }`}
-                href="/kids"
+                eventKey={"/kids"}
               >
                 Kids
               </Nav.Link>{" "}
@@ -74,7 +79,9 @@ const NavbarCom = () => {
                 <Button className={"loginBtn fw-500"}> Login</Button>
               </div>
               <div>
-                <img src={cart_logo} alt="" width={30} />
+                <Link to="/cart">
+                  <img src={cart_logo} alt="" width={30} />
+                </Link>
               </div>
               <div className="cart-count">0</div>
             </div>

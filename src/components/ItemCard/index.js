@@ -6,7 +6,7 @@ const ItemCard = ({ image, name, old_price, new_price, id }) => {
     <ItemCardStyled>
       <div className="itemCard my-4">
         <Link to={`/product/${id}`}>
-          <img src={image} alt="" className="img-class" />
+          <img onClick={window.scrollTo(0,0)} src={image} alt="" className="img-class" />
         </Link>
         <div className="Item-name my-2">{name}</div>
         <div className="Item-price">

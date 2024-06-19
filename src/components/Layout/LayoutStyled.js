@@ -27,7 +27,7 @@ export const LayoutStyled = styled.div`
 
   @media (max-width: ${({ theme }) => theme.minDesktop}) {
     .fs-24 {
-        font-size: 10px !important;
+        font-size: 15px !important;
     }
   }
 
