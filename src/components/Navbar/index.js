@@ -18,14 +18,14 @@ const NavbarCom = () => {
 
   return (
     <NavbarStyled>
-      <Navbar expand="lg" className="bg-body-tertiary">
+      <Navbar expand="lg" collapseOnSelect className="bg-body-tertiary">
         <Container>
           <NavbarBrand>
-            <img src={logo} alt="Logo" />
+            <img className="nav-logo" src={logo} alt="Logo" />
           </NavbarBrand>
           <p className="Brand-Name">SHOPPER</p>
           <Navbar.Toggle aria-controls="navbarScroll" />
-          <Navbar.Collapse id="navbarScroll">
+          <Navbar.Collapse id="navbarScroll" className="py-4">
             <Nav
               className="m-auto my-2 my-lg-0 fw-700"
               // style={{ maxHeight: "100px" }}

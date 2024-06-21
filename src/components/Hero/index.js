@@ -10,9 +10,9 @@ const Hero = () => {
       <div className="hero">
         <Container>
         <Row>
-          <Col lg={6} className="hero-left">
-            <div>
-              <h2 className="fs-24">NEW ARRIVALS ONLY</h2>
+          <Col lg={6} md={6} sm={6} xs={12} className="hero-left">
+            <div className="banner-1">
+              <h2 className="Text">NEW ARRIVALS ONLY</h2>
               <div className="fs-48 Banner-text">
                 <div className="hand-icon">
                   <div>new&nbsp;</div>
@@ -27,8 +27,8 @@ const Hero = () => {
               </div>
             </div>
           </Col>
-          <Col lg={6} className="Banner-image">
-            <img src={hero_image} alt=""  height={700}/>
+          <Col lg={6} md={6} sm={6} xs={12} className="Banner-image">
+            <img className="hero-Image" src={hero_image} alt="" height={700}/>
           </Col>
         </Row>
         </Container>

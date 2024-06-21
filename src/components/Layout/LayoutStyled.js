@@ -31,11 +31,11 @@ export const LayoutStyled = styled.div`
     }
   }
 
-  @media (max-width: ${({ theme }) => theme.tablet}) {
-    .fs-24 {
-        font-size: 13px !important;
-    }
-  }
+  // @media (max-width: ${({ theme }) => theme.tablet}) {
+  //   .fs-24 {
+  //       font-size: 13px !important;
+  //   }
+  // }
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
     .fs-24 {

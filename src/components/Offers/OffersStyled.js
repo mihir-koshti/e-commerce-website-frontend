@@ -31,4 +31,26 @@ export const OffersStyled = styled.div`
     border-radius: 35px;
     padding: 6px 34px;
   }
+
+   @media (max-width: ${({ theme }) => theme.tablet}) { 
+      .offers {
+        padding: 0px 20px !important;
+      }
+   }
+
+   @media (max-width: ${({ theme }) => theme.mobileBig}) { 
+      .offers {
+        padding: 40px 25px !important;
+      }
+   }
+
+    @media (max-width: ${({ theme }) => theme.mobileBig}) { 
+       .offer-cloumn-1 h1 {
+        font-size: 40px;
+       }
+
+       .offer-img {
+        height: 300px !important;
+       }
+    }
 `;

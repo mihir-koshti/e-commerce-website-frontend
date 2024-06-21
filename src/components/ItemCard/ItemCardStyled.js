@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const ItemCardStyled = styled.div`
-
   .Item-price {
     display: flex;
   }
@@ -27,5 +26,26 @@ export const ItemCardStyled = styled.div`
   }
   .img-class {
     width: -webkit-fill-available;
+  }
+
+  @media (max-width: ${({ theme }) => theme.tablet}) {
+    .img-class {
+      width: auto;
+    }
+  }
+
+  @media (max-width: ${({ theme }) => theme.mobileBig}) {
+    .img-class {
+      width: 200px;
+    }
+
+    .Item-name {
+      margin-top: 1.5rem !important;
+      margin-bottom: 1.5rem !important;
+    } 
+
+    .Item-price {
+      justify-content: center !important;
+    }
   }
 `;

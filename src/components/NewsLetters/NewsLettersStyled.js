@@ -3,7 +3,8 @@ import styled from "styled-components";
 export const NewsLettersStyled = styled.div`
   .newsLetter {
     background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
-    margin: 20px;
+    // margin: 20px;
+    
     margin-bottom: 140px;
     padding: 50px 140px;
     text-align: center;
@@ -47,4 +48,24 @@ export const NewsLettersStyled = styled.div`
     font-size: 16px;
     padding : 12px 24px;
   }
+
+   @media (max-width: ${({ theme }) => theme.tablet}) { 
+      .newsLetter {
+        padding: 20px 20px !important;
+      }
+
+      .newsLetter h1 {
+        font-size: 40px !important;
+      }
+   }
+
+   @media (max-width: ${({ theme }) => theme.mobileBig}) {
+    .Email-input {
+      margin: 20px 20px !important;
+    }
+
+    .Email-input input {
+      padding: 0px;
+    }
+   }
 `;

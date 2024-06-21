@@ -13,6 +13,7 @@ export const theme = {
     desktop: "1440px",
     minDesktop: "1024px",
     tablet: '768px',
+    mobileBig: '720px',
     mobile: '425px',
     smobile: '375px',
     xsmobile: '320px',

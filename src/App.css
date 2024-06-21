@@ -2,6 +2,12 @@
   text-align: start;
 }
 
+@media (max-width : 720px) {
+  .App {
+    text-align: center !important;
+  }
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

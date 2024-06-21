@@ -14,8 +14,7 @@ export const NavbarStyled = styled.div`
   }
 
   .selectedTab {
-    color: ${({theme}) => theme.colors.primary2};
-    font-size: 20px !important;
+    color: ${({ theme }) => theme.colors.primary2};
   }
   .loginBtn {
     background: ${({ theme }) => theme.colors.primary};
@@ -70,5 +69,34 @@ export const NavbarStyled = styled.div`
     right: 9px;
     background: ${({ theme }) => theme.colors.primary};
     color: ${({ theme }) => theme.colors.btnTextColor};
+  }
+
+  @media (max-width: ${({ theme }) => theme.tablet}) {
+    .loginBtn {
+      padding: 6px 12px;
+      font-size: 15px;
+    }
+    .navbar {
+    text-align: start !important;
+    }
+    .nav-logo {
+      width: 50px;
+    }
+
+    .navbar-brand {
+      margin-right: 0px !important;
+    }
+
+    .nav-link:after {
+      top: 6px;
+    }
+    .nav-link:hover:after {
+      width: 20%;
+      left: 0;
+    }
+
+    .Brand-Name {
+      font-size: 25px !important;
+    }
   }
 `;

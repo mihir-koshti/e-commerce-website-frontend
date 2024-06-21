@@ -14,7 +14,7 @@ const NewCollections = () => {
           <Row>
             {new_collections.map((item) => {
               return (
-                <Col lg={3}>
+                <Col lg={3} md={6} sm={6}>
                   <ItemCard
                     key={item.id}
                     id={item.id}
